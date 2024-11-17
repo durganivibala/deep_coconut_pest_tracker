@@ -4,9 +4,23 @@ import numpy as np
 import streamlit as st
 from PIL import Image
 
-# Load the trained model
-MODEL_PATH = "coconut_leaf_classifier.keras"  # Update the path if needed
+import gdown
+import os
+
+
+# Path to save model
+MODEL_PATH = "coconut_leaf_classifier.keras"
+
+# Check if the model file already exists locally, if not, download it
+if not os.path.exists(MODEL_PATH):
+    # Google Drive shareable link
+    url = "https://drive.google.com/uc?export=download&id=1b0LqliSna1qEiPiGidlf80KIlICw39uB"
+
+    gdown.download(url, MODEL_PATH, quiet=False)
+
+# Load the model
 model = load_model(MODEL_PATH)
+
 
 # Class labels
 class_labels = {0: "Infected", 1: "Healthy"}
