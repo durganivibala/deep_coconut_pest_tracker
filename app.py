@@ -38,7 +38,7 @@ model = load_model(MODEL_PATH)
 class_labels = {0: "Infected", 1: "Healthy"}
 
 # Streamlit UI
-st.title("Coconut Leaf Health Detector 🌿")
+st.title("Deep Coconut Pest Tracker🌿")
 st.write("Upload an image of a coconut leaf to check if it's infected or healthy.")
 
 # Image upload widget
