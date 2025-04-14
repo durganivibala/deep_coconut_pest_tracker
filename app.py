@@ -9,7 +9,7 @@ import os
 
 
 # Path to save model
-MODEL_PATH = "coconut_leaf_classifier3.keras"
+MODEL_PATH = "trained_autoencoder_model.keras"
 
 # Check if the model file already exists locally, if not, download it
 if not os.path.exists(MODEL_PATH):
