@@ -7,7 +7,7 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import img_to_array
 
 # Streamlit UI
-st.title("Deep Coconut Pest Tracker🌿")
+st.title("CRB Infection Severity Classifier🌿")
 st.write("Upload an image of a coconut leaf to check its infestation level.")
 
 # Model path and download if needed
