@@ -14,7 +14,7 @@ MODEL_PATH = "trained_autoencoder_model.keras"
 # Check if the model file already exists locally, if not, download it
 if not os.path.exists(MODEL_PATH):
     # Google Drive shareable link
-    url = "https://drive.google.com/uc?id=1JhIBehNslgAem-9w54GXOStEcDu5GcSD"
+    url = "https://drive.google.com/uc?id=1UExt0qM7ATbrbOqLm2LexNIKOfFe0Wx7"
 
     gdown.download(url, MODEL_PATH, quiet=False)
 
