@@ -14,7 +14,7 @@ MODEL_PATH = "coconut_leaf_classifier.keras"
 # Check if the model file already exists locally, if not, download it
 if not os.path.exists(MODEL_PATH):
     # Google Drive shareable link
-    url = "https://drive.google.com/uc?export=download&id=1b0LqliSna1qEiPiGidlf80KIlICw39uB"
+    url = "https://drive.google.com/file/d/1JhIBehNslgAem-9w54GXOStEcDu5GcSD/view?usp=sharing"
 
     gdown.download(url, MODEL_PATH, quiet=False)
 
