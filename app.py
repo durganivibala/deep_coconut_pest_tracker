@@ -9,7 +9,7 @@ import os
 
 
 # Path to save model
-MODEL_PATH = "coconut_leaf_classifier.keras"
+MODEL_PATH = "coconut_leaf_classifier3.keras"
 
 # Check if the model file already exists locally, if not, download it
 if not os.path.exists(MODEL_PATH):
@@ -23,7 +23,7 @@ model = load_model(MODEL_PATH)
 
 
 # Class labels
-class_labels = {0: "Infected", 1: "Healthy"}
+class_labels = {0: "MEDIUM", 1: "HIGH", 2:LOW}
 import streamlit as st
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import img_to_array
@@ -35,7 +35,7 @@ MODEL_PATH = "coconut_leaf_classifier.keras"
 model = load_model(MODEL_PATH)
 
 # Class labels
-class_labels = {0: "Infected", 1: "Healthy"}
+class_labels = {0: "MEDIUM", 1: "HIGH", 2:LOW}
 
 # Streamlit UI
 st.title("Deep Coconut Pest Tracker🌿")
@@ -61,4 +61,4 @@ if uploaded_file is not None:
     result = class_labels[predicted_class]
 
     # Display the result
-    st.success(f"The leaf is **{result}**.")
+    st.success(f"The Infected stage is **{result}**.")
